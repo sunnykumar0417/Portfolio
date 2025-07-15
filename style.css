@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#header {
+    position: fixed;
+    z-index: 100;
+    height: 20%;
+    width: 100%;
+    color: white;
+    background: linear-gradient(90deg,#0f2027,#203a43,#2c5364);
+    font-size: 27px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#header h1 {
+    margin-left: 30px;
+}
+
+.others a {
+    margin: 25px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#Home {
+    margin-left: 500px;
+}
+
+#fakeheader {
+    background-color: rgb(252, 0, 0);
+    height: 20%;
+    width: 100%;
+}
+
+#page1 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg , #1c1c1c,#232526,#414345);
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    width: 100%;
+    z-index: 90;
+    margin-left: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#content h1 {
+    padding-top: 100px;
+    font-size: 80px;
+}
+
+#content h2 {
+    font-size: 80px;
+}
+
+#content h4 {
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+#content a:hover {
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+}
+
+#content a {
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin-top: 20px;
+    border: 3px solid white;
+    border-radius: 10%;
+}
+
+#box1 {
+    height: 100%;
+    width: 50%;
+}
+
+#box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+#photo {
+    margin-top: 70px;
+    height: 100%;
+    width: 50%;
+    border-radius: 50%;
+}
+
+#page2 {
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(120deg ,#2b5876 , #4e4376);
+}
+
+#page3 {
+    height: 100%;
+    font-weight: 100%;
+    background:;
+}
+
+#about {
+    height: 50%;
+    width: 100%;
+    color: white;
+    background:linear-gradient(120deg ,#2b5876 , #4e4376);
+}
+
+#skills {
+    height: 50%;
+    width: 100%;
+    color: white;
+    background: linear-gradient(120deg , #000428 , #004e92)
+}
+
+#about h1 {
+    font-size: 55px;
+    margin-left: 50px;
+    padding-top: 40px;
+}
+
+#about p {
+    font-size: 40px;
+    margin-left: 50px;
+    padding-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#skills h1 {
+    font-size: 55px;
+    margin-left: 50px;
+    padding-top: 40px;
+}
+
+#skills i {
+    font-size: 110px;
+    padding-left: 75px;
+    margin-top: 30px;
+}
+
+#html {
+    margin-left: 200px;
+}
+
+#projects {
+    height: 50%;
+    width: 100%;
+    color: white;
+    background-color: #5A4FCF;
+background-image: linear-gradient(315deg, #5A4FCF 0%, #242124 74%);
+
+
+}
+
+#contact {
+    height: 50%;
+    width: 100%;
+    color: white;
+    background-color: #003366;
+background-image: linear-gradient(315deg, #003366 0%, #242124 74%);
+
+}
+
+#projects h1 {
+    font-size: 55px;
+    margin-left: 50px;
+    padding-top: 40px;
+}
+
+#contact h1 {
+    font-size: 55px;
+    margin-left: 50px;
+    padding-top: 40px;
+}
+
+#box {
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.box1, .box2, .box3, .box4 {
+    background: rgba(255,255,255,0.05);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 10px;
+    height: 23%;
+    width: 20%;
+    border: 2px solid white;
+}
+
+#box a {
+    color: white;
+    text-decoration: none;
+}
+
+#box :hover {
+    border-color: brown;
+    color: black;
+}
+
+.email {
+    display: flex;
+    font-size: 30px;
+    margin-left: 50px;
+    padding-top: 40px;
+}
+
+.email a {
+    color: white;
+    text-decoration: none;
+}
+
+.email a:hover {
+    color: rgb(2, 192, 192);
+}
+
+/* ✅ MEDIA QUERIES FOR MOBILE VIEW */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .others a {
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    #Home {
+        margin-left: 0;
+    }
+
+    #content {
+        flex-direction: column;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #content h1, #content h2 {
+        font-size: 40px;
+        padding-top: 20px;
+    }
+
+    #content h4 {
+        font-size: 20px;
+    }
+
+    #box1, #box2 {
+        width: 100%;
+    }
+
+    #photo {
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    #skills i {
+        font-size: 60px;
+        padding-left: 20px;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        width: 40%;
+        height: auto;
+        font-size: 15px;
+    }
+
+    #about p {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    #about h1, #skills h1, #projects h1, #contact h1 {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .email {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #content h1, #content h2 {
+        font-size: 30px;
+    }
+
+    #skills i {
+        font-size: 40px;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        width: 80%;
+    }
+}
